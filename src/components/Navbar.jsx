@@ -5,10 +5,10 @@ import { ReactComponent as PersonOutlineIcon } from "../assets/svg/personOutline
 
 function Navbar() {
   const navigate = useNavigate();
-  const location = useNavigate();
+  const location = useLocation();
 
   const pathMatchRoute = (route) => {
-    if (route === window.location.pathname) {
+    if (route === location.pathname) {
       return {
         iColor: "#2c2c2c",
         iStyle: "navbarListItemNameActive",
@@ -39,7 +39,7 @@ function Navbar() {
               width="36px"
               height="36px"
             />
-            <p className={pathMatchRoute("/offers").iStyle}>Offer</p>
+            <p className={pathMatchRoute("/offers").iStyle}>Offers</p>
           </li>
           <li className="navbarListItem" onClick={() => navigate("/profile")}>
             <PersonOutlineIcon

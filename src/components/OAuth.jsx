@@ -2,7 +2,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import {
   doc,
-  setdoc,
   getDoc,
   setDoc,
   serverTimestamp,
