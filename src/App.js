@@ -13,6 +13,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import CreateListing from './pages/CreateListing';
 import Listing from './pages/Listing';
 import Contact from './pages/Contact';
+import EditListing from './pages/EditListing';
 
 function App() {
   return (
@@ -49,6 +50,9 @@ function App() {
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/create-listing' element={<CreateListing />} />
+
+          {/* http://localhost:3000/edit-listing/DKaz6vFTJj0JDW8vhfdf */}
+          <Route path='/edit-listing/:listingId' element={<EditListing />} />
 
           {/*                        contact/landlordId?listingName */}
           {/* http://localhost:3000/contact/8fPh7awdad3?listingName=Moder */}
